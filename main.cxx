@@ -57,8 +57,12 @@ void runPagerankBatch(const string& data, size_t batch, size_t skip, int repeat)
     // Find Pagerank data.
     using G = decltype(y);
     auto cs = components(y, yt);
+    auto b  = blockgraph(y, cs);
+    auto bt = transpose(b);
+    auto gs = levelwiseComponentsFrom(cs, b, bt);
     printf("- components: %zu\n", cs.size());
-    PagerankData<G> C {move(cs)};
+    printf("- blockgraph-levels: %d\n", gs.size());
+    PagerankData<G> C {move(cs), move(b), move(bt)};
 
     do {
       do {
