@@ -33,7 +33,7 @@ auto pagerankDynamicVertices(const G& x, const H& xt, const G& y, const H& yt, c
   const auto& b  = blockgraphD(y, cs, D);
   auto [is, n] = dynamicInComponentIndices(x, xt, y, yt, cs, b);
   auto ks = joinAtVector<K>(cs, sliceIterable(is, 0, n)); size_t nv = ks.size();
-  joinAtW(ks, cs, sliceIterable(is, n));
+  joinAtU(ks, cs, sliceIterable(is, n));
   return make_pair(ks, nv);
 }
 

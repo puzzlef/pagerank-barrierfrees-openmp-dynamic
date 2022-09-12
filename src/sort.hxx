@@ -86,7 +86,7 @@ template <class G, class H>
 inline auto levelwiseGroupIndices(const G& x, const H& xt) {
   using K = typename G::key_type;
   vector<K> a(x.span()); K i = 0;
-  levelwiseFrontiersDo(x, xt, [&](const auto& frnt) { fillValueAt(a, frnt, i++); });
+  levelwiseFrontiersDo(x, xt, [&](const auto& frnt) { fillValueAtU(a, frnt, i++); });
   return a;
 }
 
