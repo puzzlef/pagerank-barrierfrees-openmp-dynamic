@@ -173,7 +173,7 @@ advantage, thanks to its reduced communication requirement.
 [![](https://i.imgur.com/szTY38M.jpg)](https://www.youtube.com/watch?v=NYbeosJvOXI)<br>
 [![ORG](https://img.shields.io/badge/org-puzzlef-green?logo=Org)](https://puzzlef.github.io)
 [![DOI](https://zenodo.org/badge/535638829.svg)](https://zenodo.org/badge/latestdoi/535638829)
-
+![](https://ga-beacon.deno.dev/G-KD28SG54JQ:hbAybl6nQFOtmVxW4if3xw/github.com/puzzlef/pagerank-barrierfrees-openmp-dynamic)
 
 [page]: https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.38.5427
 [eedi]: https://ieeexplore.ieee.org/document/9407114
